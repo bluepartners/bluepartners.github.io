@@ -1,12 +1,74 @@
+---
+import {Icon} from 'astro-icon'
+---
+
 <div class="h-24 lg:h-16"></div>
 
-<footer class="text-gray-600 dark:text-gray-400">
-  <div class="fixed bottom-0 inset-x-0 bg-slate-600 dark:bg-gray-800 px-4 lg:px-8 py-1 lg:py-4 w-full flex items-center lg:flex-row flex-col border-t-2 ">
+<footer class="text-white dark:text-gray-400">
+  <div class="fixed bottom-0 inset-x-0 bg-slate-600 text-white px-4 lg:px-8 py-1 lg:py-4 w-full flex items-center lg:flex-row flex-col border-t-2 ">
     <div>
-      <p class="text-sm text-white dark:text-gray-300 ml-2 pl-2  py-1">
+      <p class="text-sm text-white ml-2 pl-2  py-1">
         2016-{new Date().getFullYear()} © Pops Tech
       </p>
     </div>
+    <span class="flex-none flex flex-row items-center">
+      <p class="text-sm text-gray-600 dark:text-gray-300 lg:ml-4 lg:pl-4 lg:border-l-2 lg:border-white-300 dark:lg:border-purple-600 lg:py-1"
+      >
+        <a
+          href={import.meta.env.BASE_URL + 'privacy'}
+          class="ml-1 text-white "
+        >
+          Privacy Policy
+        </a>
+      </p>
+      <p
+        class="text-sm text-white ml-4 pl-4 border-l-2 border-white-300 py-1"
+      >
+        <a
+          href="/companies"
+          class="ml-1 text-white  dark:text-purple-300 dark:hover:text-pink-300"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          For Companies
+        </a>
+      </p>
+      <p
+        class="text-sm text-gray-600 dark:text-gray-300 ml-4 pl-4 border-l-2 border-white-300 py-1"
+      >
+        <a
+          href="/candidates"
+          class="ml-1 text-white  dark:text-purple-300 dark:hover:text-pink-300"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          For Candidates
+        </a>
+      </p>
+    </span>
+    <span
+      class="grow inline-flex lg:ml-auto justify-center lg:justify-end mt-2 lg:mt-0"
+    >
+      <a
+        href="https://www.linkedin.com/company/blue-partners/"
+        class="ml-3 text-white dark:text-purple-300 dark:hover:text-pink-300"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <Icon pack="bi" name="linkedin" class=" h-5 w-5" />
+        <span class="sr-only">Linkedin</span>
+      </a>
+      <a
+        href="https://github.com/bluepartners"
+        class="ml-3 text-white dark:text-purple-300 dark:hover:text-pink-300"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <Icon pack="bi" name="github" class=" h-5 w-5" />
+        <span class="sr-only">GitHub</span>
+      </a>
+
+    </span>
 
   </div>
 </footer>
