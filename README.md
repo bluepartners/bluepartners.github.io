@@ -1,54 +1,13 @@
-# Astro Starter Kit: Basics
+# A different approach to tech headhunting
 
-```
-npm create astro@latest -- --template basics
-```
+Yes, here it is: we got rid of our very old Wordpress website. It was slow and not functioning well, so we thought: why not try GitHub pages?
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+We are aware that it is not a revolutionary idea, but we like to think that it is a way to demonstrate that when we promise our clients a very high level of specialization in the tech industry, it is not just an empty phrase.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Even today, the recruiting sector for tech professionals is a jungle, in which many still have not understood the difference between Java and Javascript. Since 2016, we have been trying to develop a new way of understanding recruiting: on one hand, by providing valuable insights to our clients to help them navigate the job market; on the other hand, by offering the best possible candidate experience starting from the very first contact message. We have even written a [Manifesto](https://github.com/bluepartners/Manifesto/blob/master/README.md) to publicly commit ourselves to this effort!
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+If you are a company or a professional interested in discovering how we work, please feel free to contact us: [hello@pops-tech.com](mailto:hello@pops-tech.com)
+## 🛠 Credits
 
+We built our new website trying to have fun with some of the recent new technologies. We used [Astro](https://github.com/withastro/astro) as the framework and [Tailwind](https://tailwindcss.com/) for CSS. We took inspiration from the various available themes, with special thanks to [Hello Astro](https://github.com/hellotham/hello-astro) for the great ideas. The images are from [unDraw](https://undraw.co/), while the icons come from [heroicons](https://heroicons.com/).
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
