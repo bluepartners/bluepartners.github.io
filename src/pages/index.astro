@@ -1,9 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Features from "../components/Features.astro";
+import Clients from "../components/Clients.astro";
+import Cta from "../components/Cta.astro";
+
+import home from '../images/home.png'
+
+const details = {
+  title1: "Blue Partners is the",
+  highlight: "tech headhunting",
+  title2: "company 2.0",
+  p1: "Established in 2016, we specialize in providing top-notch talent solutions for the tech industry. Our team of experienced professionals has a deep understanding of the ever-evolving tech landscape, and we use this expertise to help our clients find the best talent for their organization.",
+  p2: "At Blue Partners, we believe that people are the driving force behind any successful business. That's why we are committed to providing customized HR solutions that meet the unique needs of each of our clients. Whether you are looking to hire new talent, streamline your recruitment processes, or optimize your HR strategy, we are here to help.",
+  logo: home
+}
+
 ---
 
 <Layout>
-	
+  <Hero details={details} />
+  <Features />
+  <Clients />
+  <Cta />
 </Layout>
 
 

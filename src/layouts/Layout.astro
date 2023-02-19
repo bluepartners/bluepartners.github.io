@@ -16,7 +16,7 @@ const {title = "Blue Partners"} = Astro.props
   </head>
   <body>
     <Header />
-    <Hero />
+
     <slot />
     <Footer />
   </body>
@@ -24,10 +24,11 @@ const {title = "Blue Partners"} = Astro.props
 
 <style>
   /* Import Nunito font */
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Urbanist');
 
 /* Set Nunito as the default font */
 body {
-    font-family: 'Nunito', sans-serif;
+  font-family: Urbanist, sans-serif;
+	scroll-behavior: smooth;
 }
 </style>
