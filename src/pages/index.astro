@@ -16,11 +16,61 @@ const details = {
   logo: home
 }
 
+const features = [
+  {
+    name: "Headhunting",
+    description: "We identify and engage passive talents that best fit the needs and ambitions of our clients, helping them to increase hiring success rate",
+    icon: "user"
+  },
+  {
+    name: "Mapping",
+    description: "We provide market insights and data that will help companies to empower hiring strategies and increase people management efficacy",
+    icon: "map"
+  },
+  {
+    name: "RPO",
+    description: "We assign a skilled professional to a specific TA project of the client to guarantee max efficiency and effectiveness in hiring",
+    icon: "cog",
+  },
+  {
+    name: "Coaching",
+    description: "We provide our clients with dedicated training for the internal recruiters introducing best practices and technical know-how.",
+    icon: "beaker"
+  },
+]
 ---
 
 <Layout>
   <Hero details={details} />
-  <Features />
+  <div class="py-12 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center">
+        <h2
+          class="text-base text-indigo-800 dark:text-purple-300 font-semibold tracking-wide uppercase"
+        >
+          Our services
+        </h2>
+        <p
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl"
+        >
+          Take your tech team to the next level
+        </p>
+        <p
+          class="mt-4 max-w-2xl text-xl text-gray-600 dark:text-gray-300 lg:mx-auto"
+        >
+        From successful scale-ups to multinational corporations with thousands of employees, Blue Partners offers the most efficient strategies to strengthen your tech team with long lasting value.
+        </p>
+      </div>
+
+      <div class="mt-10">
+        <dl
+          class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10"
+        >
+        <Features features={features} />
+        </dl>
+      </div>
+    </div>
+  </div>
   <Clients />
   <Cta />
 </Layout>

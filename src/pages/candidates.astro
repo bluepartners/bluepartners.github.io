@@ -1,15 +1,17 @@
 ---
+import {Icon} from 'astro-icon'
+
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 
 import candidates from '../images/candidates.png'
 
 const details = {
-  title1: "Blue Partners is the",
-  highlight: "tech headhunting",
-  title2: "company 2.0",
-  p1: "Established in 2016, we specialize in providing top-notch talent solutions for the tech industry. Our team of experienced professionals has a deep understanding of the ever-evolving tech landscape, and we use this expertise to help our clients find the best talent for their organization.",
-  p2: "At Blue Partners, we believe that people are the driving force behind any successful business. That's why we are committed to providing customized HR solutions that meet the unique needs of each of our clients. Whether you are looking to hire new talent, streamline your recruitment processes, or optimize your HR strategy, we are here to help.",
+  title1: "Our mission:",
+  highlight: "empowering tech professionals",
+  title2: "",
+  p1: "How many times have you been contacted by a recruiter with interview proposals for mysterious companies whose names and proposed salaries you couldn't know? What about all those times when you were offered roles with technologies that you didn't know at all? At Blue Partners, we believe that this era should come to an end.",
+  p2: "We are drived by the value of transparency and expertise: even if you are not actively seeking a new job, our commitment is to provide you with job opportunities that are in line with your experience, while giving you all the elements from the start to evaluate whether it may be of interest to you.",
   logo: candidates
 }
 
@@ -17,4 +19,6 @@ const details = {
 
 <Layout title="Blue Partners | Candidates">
 	<Hero details={details} />
+ 
 </Layout>
+
