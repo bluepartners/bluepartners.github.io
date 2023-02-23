@@ -3,6 +3,7 @@ import {Icon} from 'astro-icon'
 
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+import Features from '../components/Features.astro';
 
 import candidates from '../images/candidates.png'
 
@@ -11,14 +12,61 @@ const details = {
   highlight: "empowering tech professionals",
   title2: "",
   p1: "How many times have you been contacted by a recruiter with interview proposals for mysterious companies whose names and proposed salaries you couldn't know? What about all those times when you were offered roles with technologies that you didn't know at all? At Blue Partners, we believe that this era should come to an end.",
-  p2: "We are drived by the value of transparency and expertise: even if you are not actively seeking a new job, our commitment is to provide you with job opportunities that are in line with your experience, while giving you all the elements from the start to evaluate whether it may be of interest to you.",
+  p2: "We are driven by the value of transparency and expertise: even if you are not actively seeking a new job, our commitment is to provide you with job opportunities that are in line with your experience, while giving you all the elements from the start to evaluate whether it may be of interest to you.",
   logo: candidates
 }
+
+const features = [
+  {
+    name: "Fast track",
+    description: "We reach out to you because we have a specific opportunity that matches your profile. Interested? We can schedule an interview with the company within 72 hours.",
+    icon: "user"
+  },
+  {
+    name: "Increased visibility",
+    description: "As one of our selected candidates, you'll be in the spotlight of companies' recruiters. We'll provide insightful comments to enrich your CV and increase your chances of success.",
+    icon: "map"
+  },
+  {
+    name: "Tutoring",
+    description: "Our understanding of our clients' recruitment processes runs deep. Throughout the entire journey, we'll provide you with guidance and hints to help you excel at every stage.",
+    icon: "cog",
+  },
+
+]
 
 ---
 
 <Layout title="Blue Partners | Candidates">
 	<Hero details={details} />
- 
+  <div class="py-12 bg-blue-100 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center">
+        <h2
+          class="text-base text-indigo-800 dark:text-purple-300 font-semibold tracking-wide uppercase"
+        >
+          Our promise
+        </h2>
+        <p
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl"
+        >
+          Candidate experience as it should be
+        </p>
+        <p
+          class="mt-4 max-w-2xl text-xl text-gray-600 dark:text-gray-300 lg:mx-auto"
+        >
+        We love to work with leading companies that are disrupting their own industries. All of them share some common traits: a strong internal culture, high level of technicality and competitive salaries.
+        </p>
+      </div>
+
+      <div class="mt-10">
+        <dl
+          class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10"
+        >
+        <Features features={features} />
+        </dl>
+      </div>
+    </div>
+  </div>
 </Layout>
 
