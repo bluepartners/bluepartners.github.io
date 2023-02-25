@@ -1,9 +1,8 @@
 ---
-import {Icon} from 'astro-icon'
-
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Features from '../components/Features.astro';
+
 
 import candidates from '../images/candidates.png'
 
@@ -20,17 +19,17 @@ const features = [
   {
     name: "Fast track",
     description: "We reach out to you because we have a specific opportunity that matches your profile. Interested? We can schedule an interview with the company within 72 hours.",
-    icon: "user"
+    icon: "bookmark"
   },
   {
     name: "Increased visibility",
     description: "As one of our selected candidates, you'll be in the spotlight of companies' recruiters. We'll provide insightful comments to enrich your CV and increase your chances of success.",
-    icon: "map"
+    icon: "star"
   },
   {
     name: "Tutoring",
     description: "Our understanding of our clients' recruitment processes runs deep. Throughout the entire journey, we'll provide you with guidance and hints to help you excel at every stage.",
-    icon: "cog",
+    icon: "share",
   },
 
 ]
@@ -68,5 +67,6 @@ const features = [
       </div>
     </div>
   </div>
+
 </Layout>
 
