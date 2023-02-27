@@ -2,31 +2,27 @@
 import logo from '../images/logo.png'
 ---
 
-<header class="">
-  <nav class="flex items-center justify-between flex-wrap bg-white p-6 flex-row-reverse sm:flex-row">
-    <div class="flex items-center sm:mr-auto text-white">
+<header>
+  <nav class="flex items-center justify-between bg-white p-6 flex-wrap">
+    <div class="flex items-center text-white order-0 sm:order-0">
       <a href="/">
         <img class="h-10 w-10" src={logo} alt="Blue Partners">
       </a>
     </div>
-    <div class="hidden sm:block w-full sm:items-center sm:w-auto">
-      <div class="text-sm sm:flex-grow">
-      </div>
-      <div class="sm:ml-4 uppercase">
-
-
-        <a href="/companies" class="bg-gray-100 border border-indigo-800 py-2 px-4 rounded-md text-gray-800 font-medium hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 m-2">
+    <div class="sm:ml-auto order-1 sm:order-1">
+      <div class="uppercase">
+        <a href="/companies" class="bg-gray-100 border border-indigo-800 py-2 px-4 rounded-md text-gray-800 font-medium hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 m-2 sm:text-base sm:p-3 sm:mx-2">
           For companies
         </a>
-        <a href="/candidates" class="bg-gray-100 border border-fuchsia-500 py-2 px-4 rounded-md text-gray-800 font-medium hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 m-2">
+        <a href="/candidates" class="bg-gray-100 border border-fuchsia-500 py-2 px-4 rounded-md text-gray-800 font-medium hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 m-2 sm:text-base sm:p-3 sm:mx-2">
           For candidates
         </a>
       </div>
     </div>
   </nav>
-
-
 </header>
+
+
 
 <style>
 
