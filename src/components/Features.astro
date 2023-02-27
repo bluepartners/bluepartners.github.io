@@ -10,7 +10,7 @@ const {features} = Astro.props
   features.map(feature => (
     <div class="relative">
       <dt>
-        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-800 dark:bg-purple-400 text-white dark:text-black">
+        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-800  text-white">
         <Icon
           class="h-6 w-6"
           aria-hidden="true"
@@ -18,11 +18,11 @@ const {features} = Astro.props
           name={feature.icon}
         />
         </div>
-        <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-gray-200">
+        <p class="ml-16 text-lg leading-6 font-medium text-gray-900 ">
           {feature.name}
         </p>
       </dt>
-      <dd class="mt-2 ml-16 text-base text-gray-600 dark:text-gray-400">
+      <dd class="mt-2 ml-16 text-base text-gray-600 ">
         {feature.description}
       </dd>
     </div>
